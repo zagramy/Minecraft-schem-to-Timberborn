@@ -101,6 +101,16 @@ This file controls how Minecraft terrain is converted into Timberborn maps.
 
 ---
 
+## Creating a log file 
+
+```json
+"logFileCreate": false,
+```
+
+Disable or enable log file creation, `true` or `false`
+
+---
+
 ## Map size limit
 
 ```json
