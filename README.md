@@ -39,7 +39,7 @@ You can also use WorldEdit commands to make the selection.
 //schem save structure
 ```
 
-5. Move the generated `.schem` file into the folder containing the script or executable.
+5. Move the generated `structure.schem` file into the folder containing the script or executable.
 
 ---
 
