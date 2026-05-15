@@ -148,7 +148,7 @@ Each plant type controls how it behaves after conversion.
 ### Parameters:
 
 * `chanceNew` → probability of new instances appearing
-* `chanceGrow` → probability of generating a growth stage instead of a static object (young or mature form depending on context)
+* `chanceGrow` → Probability of generating a growth stage instead of a static object (young or mature form depending on context). Value ranges from 0 to 1, where lower values favor young forms, higher values favor mature forms, and intermediate values (e.g. 0.3, 0.5) produce a mix based on chance.
 
 Value range:
 
