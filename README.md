@@ -264,7 +264,7 @@ Move it into your Timberborn maps folder.
 ### `..._log.json`
 
 A log file containing generated map data for inspection.
-It can be safely deleted, cteated if `"logFileCreate": true,` in config.json.
+It can be safely deleted. This file was created if `"logFileCreate": true,` in config.json file.
 
 ---
 
