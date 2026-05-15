@@ -43,7 +43,7 @@ package.json
 structure.schem
 ```
 
-Install Node.js first.
+Install Node.js first. https://nodejs.org/en/download
 
 During the first launch:
 
