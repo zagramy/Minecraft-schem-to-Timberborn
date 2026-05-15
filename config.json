@@ -1,0 +1,87 @@
+{
+  "mapMaxSize": {
+    "x": 256,
+    "y": 256
+  },
+  "settings": {
+    "oak":  {
+		"chanceNew": 0.5,
+		"chanceGrow": 0.5
+	},
+    "birch":  {
+		"chanceNew": 0.5,
+		"chanceGrow": 0.5
+	},
+    "pine":  {
+		"chanceNew": 0.5,
+		"chanceGrow": 0.5
+	},
+    "blueberry":  {
+		"chanceNew": 0.5,
+		"chanceGrow": 0.5
+	}
+  },
+  "terrainBlocks": [
+    "minecraft:stone",
+    "minecraft:dirt",
+    "minecraft:grass_block",
+    "minecraft:gravel",
+    "minecraft:sand"
+  ],
+  "groups": {
+    "oak": [
+      "minecraft:oak_log",
+      "minecraft:dark_oak_log",
+      "minecraft:pale_oak_log"
+    ],
+    "birch": [
+      "minecraft:birch_log",
+      "minecraft:acacia_log",
+      "minecraft:cherry_log"
+    ],
+    "pine": [
+      "minecraft:spruce_log",
+      "minecraft:jungle_log",
+      "minecraft:mangrove_roots"
+    ],
+    "blueberry": [
+      "minecraft:allium",
+      "minecraft:azure_bluet",
+      "minecraft:bamboo",
+      "minecraft:blue_orchid",
+      "minecraft:brown_mushroom",
+      "minecraft:bush",
+      "minecraft:cornflower",
+      "minecraft:crimson_fungus",
+      "minecraft:dandelion",
+      "minecraft:dead_bush",
+      "minecraft:fern",
+      "minecraft:glow_lichen",
+      "minecraft:large_fern",
+      "minecraft:lilac",
+      "minecraft:lily_of_the_valley",
+      "minecraft:moss_carpet",
+      "minecraft:orange_tulip",
+      "minecraft:oxeye_daisy",
+      "minecraft:peony",
+      "minecraft:pink_tulip",
+      "minecraft:pink_petals",
+      "minecraft:pitcher_plant",
+      "minecraft:poppy",
+      "minecraft:red_mushroom",
+      "minecraft:red_tulip",
+      "minecraft:rose_bush",
+      "minecraft:short_dry_grass",
+      "minecraft:short_grass",
+      "minecraft:sugar_cane",
+      "minecraft:sunflower",
+      "minecraft:sweet_berry_bush",
+      "minecraft:tall_grass",
+      "minecraft:torchflower",
+      "minecraft:vine",
+      "minecraft:warped_fungus",
+      "minecraft:white_tulip",
+      "minecraft:wildflowers"
+    ]
+  }
+}
