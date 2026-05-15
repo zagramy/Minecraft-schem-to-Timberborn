@@ -95,6 +95,145 @@ Minecraft schem to Timberborn.exe
 ```
 
 ---
+# config.json documentation
+
+This file controls how Minecraft terrain is converted into Timberborn maps.
+
+---
+
+## Map size limit
+
+```json
+"mapMaxSize": {
+  "x": 256,
+  "y": 256
+}
+```
+
+Defines the maximum size of the generated map.
+
+* `x` → width of the map
+* `y` → length of the map
+
+⚠️ Important:
+256×256 is the maximum supported size for vanilla Timberborn (without mods). Larger maps may require mod support or custom adjustments.
+
+Anything above this limit will be clipped or reduced during processing.
+
+---
+
+## Settings (vegetation behavior)
+
+```json
+"settings": {
+  "oak": {
+    "chanceNew": 0.5,
+    "chanceGrow": 0.5
+  }
+}
+```
+
+Each plant type controls how it behaves after conversion.
+
+### Parameters:
+
+* `chanceNew` → probability of new instances appearing
+* `chanceGrow` → probability of generating a growth stage instead of a static object (young or mature form depending on context)
+
+Value range:
+
+Both parameters must be within:
+
+minimum: 0
+maximum: 1
+
+Examples:
+
+0 → disabled (no effect)
+0.5 → balanced chance
+1 → always applied
+
+### Supported groups:
+
+* oak
+* birch
+* pine
+* blueberry
+
+Each group has independent growth and spawn behavior.
+
+---
+
+## Terrain blocks
+
+```json
+"terrainBlocks": [
+  "minecraft:stone",
+  "minecraft:dirt",
+  "minecraft:grass_block",
+  "minecraft:gravel",
+  "minecraft:sand"
+]
+```
+
+Defines which Minecraft blocks are treated as valid terrain.
+
+Only these blocks are converted into playable ground in Timberborn.
+
+---
+
+## Block groups mapping
+
+### Trees
+
+```json
+"oak"
+"birch"
+"pine"
+```
+
+Each group defines which Minecraft blocks are interpreted as a specific tree type in Timberborn.
+
+Example:
+
+* oak → oak logs, dark oak, pale oak
+* birch → birch, acacia, cherry
+* pine → spruce, jungle, mangrove roots
+
+---
+
+### Vegetation / plants
+
+```json
+"blueberry"
+```
+
+This group includes all small plants, flowers, bushes and decorative vegetation.
+
+Examples:
+
+* flowers (dandelion, poppy, tulips, etc.)
+* mushrooms
+* grass variants
+* vines
+* sugar cane
+* berries and crops
+
+These are used to populate the map with natural details.
+
+---
+
+## Summary
+
+This config controls:
+
+* map size limits
+* terrain filtering rules
+* tree classification
+* vegetation distribution probability
+* world detail density after conversion
+
+Adjusting values affects how dense, natural and optimized the final Timberborn map will be.
 
 # Generated files
 
