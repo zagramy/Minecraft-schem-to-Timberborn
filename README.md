@@ -1,6 +1,20 @@
 # Minecraft schem to Timberborn
 Convert Minecraft worlds into fully playable Timberborn maps using WorldEdit schematics. The app preserves terrain, trees, and individual water sources to recreate your world with impressive accuracy. Explore familiar landscapes and build your beaver civilization on maps generated from your own creations.
 
+
+## Tested on
+
+This version has been tested with the following setup:
+
+* Minecraft **26.1.2**
+* Fabric API **0.148.2+26.1.2**
+* Fabric Installer **1.1.1**
+* WorldEdit Mod **7.4.3**
+
+## Notes
+
+Other versions may work, but compatibility is not guaranteed. For best results, use the exact setup listed above.
+
 # How it works
 
 ## Exporting terrain from Minecraft
@@ -43,7 +57,7 @@ package.json
 structure.schem
 ```
 
-Install Node.js first. https://nodejs.org/en/download
+Install [Node.js](https://nodejs.org/en/download) first. 
 
 During the first launch:
 
@@ -72,7 +86,7 @@ map_thumbnail.jpg
 structure.schem
 Minecraft schem to Timberborn.exe
 ```
-Releases: https://github.com/zagramy/Minecraft-schem-to-Timberborn/releases/tag/v0.0.1
+[Releases exe](https://github.com/zagramy/Minecraft-schem-to-Timberborn/releases/tag/v0.0.1)
 
 If all required files are in the same folder, simply run:
 
