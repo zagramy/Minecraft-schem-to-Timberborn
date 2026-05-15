@@ -159,9 +159,9 @@ maximum: 1
 
 Examples:
 
-0 → disabled (no effect)
-0.5 → balanced chance
-1 → always applied
+* `0` – disables additional generation: for chanceNew no extra trees are spawned, and for chanceGrow only small trees and shrubs are generated.
+* `0.5` – 50% chance per block within a 2-block radius of a moved schematic tree: for chanceNew an additional tree may spawn, and for chanceGrow either a small or large tree or shrub may be generated.
+* `1` – 100% chance per block within a 2-block radius of a moved schematic tree: for chanceNew an additional tree is always spawned, and for chanceGrow only large trees and shrubs are generated.
 
 ### Supported groups:
 
