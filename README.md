@@ -251,7 +251,7 @@ The script or executable should generate two files:
 
 ```txt
 map_dc143ff7-e30c-4586-9b57-294c1174c46e.timber
-map_dc143ff7-e30c-4586-9b57-294c1174c46e_log
+map_dc143ff7-e30c-4586-9b57-294c1174c46e_log.json
 ```
 
 ## File descriptions
@@ -264,7 +264,7 @@ Move it into your Timberborn maps folder.
 ### `..._log.json`
 
 A log file containing generated map data for inspection.
-It can be safely deleted.
+It can be safely deleted, cteated if `"logFileCreate": true,` in config.json.
 
 ---
 
