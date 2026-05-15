@@ -6,10 +6,10 @@ Convert Minecraft worlds into fully playable Timberborn maps using WorldEdit sch
 
 This version has been tested with the following setup:
 
-* Minecraft **26.1.2**
-* Fabric API **0.148.2+26.1.2**
-* Fabric Installer **1.1.1**
-* WorldEdit Mod **7.4.3**
+* [Minecraft **26.1.2**](https://www.minecraft.net/pl-pl/download)
+* [Fabric API **0.148.2+26.1.2**](https://mediafilez.forgecdn.net/files/8073/357/fabric-api-0.148.2%2B26.1.2.jar)
+* [Fabric Installer **1.1.1**](https://maven.fabricmc.net/net/fabricmc/fabric-installer/1.1.1/fabric-installer-1.1.1.exe)
+* [WorldEdit Mod **7.4.3**](https://mediafilez.forgecdn.net/files/8037/379/worldedit-mod-7.4.3.jar)
 
 ## Notes
 
