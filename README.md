@@ -67,12 +67,12 @@ node index.js
 Required files:
 
 ```txt
-index.js
 config.json
 map_thumbnail.jpg
 structure.schem
 Minecraft schem to Timberborn.exe
 ```
+Releases: https://github.com/zagramy/Minecraft-schem-to-Timberborn/releases/tag/v0.0.1
 
 If all required files are in the same folder, simply run:
 
