@@ -2,9 +2,8 @@
 const fs = require("fs");
 const nbt = require("prismarine-nbt");
 const AdmZip = require("adm-zip");
-const {
-    randomUUID
-} = require("crypto");
+const readline = require("readline");
+const {randomUUID} = require("crypto");
 
 // ================= CONFIG =================
 const path = require("path");
@@ -20,6 +19,8 @@ function appPath(file) {
 const config = JSON.parse(
     fs.readFileSync(appPath("config.json"), "utf8")
 );
+
+const logFileCreate = config.logFileCreate;
 const MAX_X = config.mapMaxSize.x;
 const MAX_Y = config.mapMaxSize.y;
 const chanceNewOak = config.settings.oak.chanceNew;
@@ -453,10 +454,10 @@ function convert(file) {
 									}
 								};
 
-								if (Math.random() < growChance) {
+								if (Math.random() > growChance) {
 
 									components.Growable = {
-										GrowthProgress: 0.009998858
+										GrowthProgress: 0.000000001
 									};
 								}
 
@@ -475,7 +476,7 @@ function convert(file) {
                                             continue;
                                         }
 
-                                        if (Math.random() < chancenew) {
+                                        if (Math.random() > chancenew) {
                                             continue;
                                         }
 
@@ -586,7 +587,7 @@ function convert(file) {
 											}
 										};
 
-										if (Math.random() < growChance) {
+										if (Math.random() > growChance) {
 
 											components.Growable = {
 												GrowthProgress: 0.000000001
@@ -742,10 +743,12 @@ function convert(file) {
             );
         }
 
-        fs.writeFileSync(
-            `map_${fileid}_log.json`,
-            JSON.stringify(world, null, 2)
-        );
+        if (logFileCreate) {
+			fs.writeFileSync(
+				`map_${fileid}_log.json`,
+				JSON.stringify(world, null, 2)
+			);
+		}
 
         const zip = new AdmZip();
 
@@ -771,8 +774,15 @@ function convert(file) {
 		console.log("Water sources created:", waterSourcesCount); 
 		console.log("Tree and Blueberry entities created:", treeEntitiesCount); 
 		console.log("=================================");
+		const rl = readline.createInterface({
+			input: process.stdin,
+			output: process.stdout
+		});
+
+		rl.question("Press Enter to exit...", () => {
+			rl.close();
+		});
     });
-	process.stdin.resume();
 }
 
 convert(appPath("structure.schem"));
